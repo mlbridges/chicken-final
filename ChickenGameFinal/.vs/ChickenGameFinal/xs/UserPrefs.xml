@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{1581FFDC-91F0-F3E9-22A2-09560D18CCC8}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/GemEating.cs">
+    <Files>
+      <File FileName="Assets/_Scripts/GemEating.cs" Line="90" Column="19" />
+      <File FileName="Assets/_Scripts/InventoryDict.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/ChickenMoveAnims.cs" Line="11" Column="37" />
+      <File FileName="Assets/_Scripts/ObjectCollection.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/PointCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/HealthTracker.cs" />
+      <File FileName="Assets/_Scripts/enemyControl2.cs" Line="122" Column="20" />
+      <File FileName="../IntoThe3DWorld/Assets/_Scripts/DetectTreasure.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e3fd58c1-c922-4b21-9838-64bad12578cd" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
