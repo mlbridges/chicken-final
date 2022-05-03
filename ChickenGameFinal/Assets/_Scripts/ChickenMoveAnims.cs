@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChickenMoveAnims : MonoBehaviour
 {
@@ -161,6 +162,7 @@ public class ChickenMoveAnims : MonoBehaviour
                         if (enemyKills >= 3)
                         {
                             //play the win scene
+                            SceneManager.LoadScene(2);
                             Debug.Log("you won");
                         }
                     }

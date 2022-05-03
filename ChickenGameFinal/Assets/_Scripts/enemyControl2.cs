@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class enemyControl2 : MonoBehaviour
 {
@@ -110,6 +111,7 @@ public class enemyControl2 : MonoBehaviour
         if(playerStats.healthValue <= 0)
         {
             //go to the game over scene
+            SceneManager.LoadScene(8);
             Debug.Log("game over");
         }
     }

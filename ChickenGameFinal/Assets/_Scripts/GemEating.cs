@@ -6,8 +6,6 @@ using UnityEngine.UI;
 //a script for the player to be able to eat gems, which is attached to the player
 public class GemEating : InventoryDict
 {
-    public ChickenMoveAnims player;
-    private float speedInc = 0.2f;
     public delegate void SendDictMessage(string gemType);
     public static event SendDictMessage gemRemove;
 
@@ -32,20 +30,15 @@ public class GemEating : InventoryDict
         InventoryDict.OnHealthGemRemoved += RemoveHealthGem;
         InventoryDict.OnSpeedGemRemoved += RemoveSpeedGem;
         InventoryDict.OnStrengthGemRemoved += RemoveStrengthGem;
-
-        //subscribing to the event to eat the gems (from the menu manager script)
-
     }
 
     // Update is called once per frame
     void Update()
     {
         //i'm sure there's a more efficient way than to put this in update but this works for now
-        //more efficient way: when the buttons are clicked (via menu manager script), these lines of code
-        //will fire in separate functions (which are subscribed to the event in the menu manager script)
         if (HealthGemEatingAbility == true)
         {
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.O))
             {
                 //tell the UI they gained 1 health
                 score.healthValue++;
@@ -62,14 +55,13 @@ public class GemEating : InventoryDict
 
         if(SpeedGemEatingAbility == true)
         {
-            if (Input.GetKeyDown(KeyCode.O))
+            if (Input.GetKeyDown(KeyCode.I))
             {
                 //increase speed
                 //playerAnims.speed += 0.3f;
 
-                //tell the UI they gained 1 speed + actually change player speed
+                //tell the UI they gained 1 speed
                 score.speedValue ++;
-                player.speed += speedInc;
 
                 //find and remove one speed gem from dict
                 if (gemRemove != null)
@@ -85,9 +77,6 @@ public class GemEating : InventoryDict
             {
                 //tell the UI they gained 1 strength
                 score.strengthValue ++;
-                //actually increase strength
-                player.playerStrength ++;
-                //Debug.Log("player strength: " + player.playerStrength);
 
                 //find and remove one strength gem from dict
                 if (gemRemove != null)

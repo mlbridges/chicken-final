@@ -6,7 +6,7 @@ using UnityEngine;
 public class InventoryDict : MonoBehaviour
 {
     //initializing a dictionary variable
-    protected Dictionary<string, int> GemInv;
+    public Dictionary<string, int> GemInv;
 
     //creating events for the gem eater to subscribe to
     public delegate void DoSomething();

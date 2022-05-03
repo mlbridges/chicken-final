@@ -26,33 +26,7 @@ public class AdultChickenAnim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //right now the animations are all attached to specific keys
-        //but can easily be set to trigger at other times or to play on a loop
-        if (Input.GetKeyDown(KeyCode.Y)) 
-        {
-            AnimateRun();
-        }
-
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            AnimateWalk();
-        }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            AnimateEat();
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            AnimateTurn();
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            AnimateIdle();
-        }
-
+        AnimateTurn();
     }
 
     //function to play an animation while turning off the other animations
