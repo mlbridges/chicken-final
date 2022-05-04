@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    public Image inventoryImage;
     public Transform inventory;
     public GameObject HealthGem;
     public GameObject SpeedGem;
@@ -15,16 +13,13 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inventoryImage.enabled = true;
-        Debug.Log("inventory state: " + inventoryImage.enabled);
-        //inventory.gameObject.SetActive(false);
+        
     }
     void UpdateButtons()
     {
         foreach(var button in InventoryButtons)
         {
-            Debug.Log("buttons should be set false");
-            button.gameObject.GetComponent<Image>().enabled = false;
+            button.gameObject.SetActive(false);
         }
         // for each item in the inventorydict 
         // set GemSelect GemType 
@@ -33,7 +28,7 @@ public class MenuManager : MonoBehaviour
         {
             Debug.Log("something");
             InventoryButtons[Index].GemType = item.Key;
-            InventoryButtons[Index].gameObject.GetComponent<Image>().enabled = true;
+            InventoryButtons[Index].gameObject.SetActive(true);
             Index += 1;
             /*            if(item.Key = "health gems")
                         {
@@ -45,30 +40,20 @@ public class MenuManager : MonoBehaviour
                         } */
         }
     }
-
-
     // Update is called once per frame
-    private void Update()
-    {
-        InventoryDisplay();
-    }
-
-    void InventoryDisplay() {
+    void Update() {
         // menu summoned with escape key
         if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            if (inventoryImage.enabled == true) 
+    {
+            if (inventory.gameObject.activeSelf) 
             {
-                inventoryImage.enabled = false;
-                Debug.Log("inventory state: " + inventoryImage.enabled);
+                inventory.gameObject.SetActive(false);
             }
-
-            if(inventoryImage.enabled == false)
+            else
             {
-                inventoryImage.enabled = true;
-                Debug.Log("inventory state: " + inventoryImage.enabled);
+                inventory.gameObject.SetActive(true);
                 UpdateButtons();
             }
-        }
+    }
     }
 }
