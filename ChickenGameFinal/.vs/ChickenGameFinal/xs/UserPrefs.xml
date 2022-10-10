@@ -1,25 +1,40 @@
 ﻿<Properties StartupConfiguration="{1581FFDC-91F0-F3E9-22A2-09560D18CCC8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/endGame.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/HealthTracker.cs">
     <Files>
+      <File FileName="Assets/_Scripts/ObjectCollection.cs" Line="49" Column="2" />
       <File FileName="Assets/_Scripts/GemEating.cs" Line="33" Column="1" />
-      <File FileName="Assets/_Scripts/InventoryDict.cs" />
+      <File FileName="Assets/_Scripts/InventoryDict.cs" Line="20" Column="1" />
       <File FileName="Assets/_Scripts/ChickenMoveAnims.cs" Line="89" Column="1" />
-      <File FileName="Assets/_Scripts/PointCounter.cs" />
-      <File FileName="Assets/_Scripts/HealthTracker.cs" />
-      <File FileName="Assets/_Scripts/enemyControl2.cs" />
-      <File FileName="Assets/_Scripts/AdultChickenAnim.cs" />
+      <File FileName="Assets/_Scripts/PointCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/HealthTracker.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/enemyControl2.cs" Line="62" Column="44" />
+      <File FileName="Assets/_Scripts/AdultChickenAnim.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/MenuManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/_Scripts/GemSelect.cs" />
-      <File FileName="Assets/_Scripts/ObjectCollection.cs" />
+      <File FileName="Assets/_Scripts/GemSelect.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/endGame.cs" Line="18" Column="32" />
       <File FileName="Assets/_Scripts/SceneLoader.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ChickenGameFinal" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4d07191f-9d15-47ac-87d3-4283711af148" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="63871d42-421b-4af7-95ca-2a12dbdbc459" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
